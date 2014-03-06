@@ -1,13 +1,9 @@
 'use strict';
+
 var CHAR_CODE_INDEX_ZERO = 65,
-MAX_KEY_LENGTH = 5,
 key  = 'REDDIT',
 message = 'TODAYISMYBIRTHDAY',
-encodedMessage = 'ZEJFOKHTMSRMELCPODWHCGAW',
-encodeMessage,
-decryptMessage,
-i;
-
+encodeMessage;
 
 encodeMessage = function(k, m) {
   var modKey = '',
@@ -28,8 +24,3 @@ encodeMessage = function(k, m) {
 };
 
 console.log('cypher: ', encodeMessage(key, message));
-
-
-
-
-
